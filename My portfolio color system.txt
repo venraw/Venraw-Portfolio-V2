@@ -1,0 +1,267 @@
+Absolutely. For VENRAW as a long-term tech/UI/UX + Front-End brand, I'd use a Deep Navy + Electric Blue system. It's flexible enough to work with different photos, project screenshots, illustrations, and future rebranding.
+
+🎨 VENRAW — Full Colour System
+
+1. Brand / Primary
+
+Token	Hex	Usage
+
+Primary 50	#EFF6FF	Very light blue backgrounds
+Primary 100	#DBEAFE	Subtle highlights
+Primary 200	#BFDBFE	Light accents
+Primary 300	#93C5FD	Secondary accent
+Primary 400	#60A5FA	Hover / bright accent
+Primary 500	#3B82F6	Main brand colour
+Primary 600	#2563EB	Button / active state
+Primary 700	#1D4ED8	Button hover / strong accent
+Primary 800	#1E40AF	Dark accent
+Primary 900	#1E3A8A	Deep blue
+
+
+Your main brand colour: #3B82F6
+
+
+---
+
+2. Background System
+
+These are the colours that will make up most of your website.
+
+Token	Hex	Usage
+
+Background 950	#050914	Deepest background
+Background 900	#080D18	Main website background
+Background 800	#0F172A	Section background
+Background 700	#151F32	Cards
+Background 600	#1E293B	Elevated cards / dropdowns
+Background 500	#273449	Hover / selected surfaces
+
+
+I'd make:
+
+background: #080D18;
+
+your default page background.
+
+
+---
+
+3. Text System
+
+Don't use pure white everywhere.
+
+Token	Hex	Usage
+
+Text Primary	#F8FAFC	Headings / important text
+Text Secondary	#CBD5E1	Paragraphs
+Text Tertiary	#94A3B8	Supporting text
+Text Muted	#64748B	Metadata
+Text Disabled	#475569	Disabled elements
+
+
+Your main heading:
+
+color: #F8FAFC;
+
+Your paragraph:
+
+color: #CBD5E1;
+
+
+---
+
+4. Border System
+
+Keep borders subtle against the dark background.
+
+Token	Hex	Usage
+
+Border Subtle	#172033	Very subtle separation
+Border Default	#243044	Cards / inputs
+Border Strong	#334155	Hover / emphasis
+Border Accent	#3B82F6	Active elements
+
+
+
+---
+
+5. Gradient System
+
+Don't overuse gradients. Use them primarily for hero accents and important CTAs.
+
+Primary gradient
+
+background: linear-gradient(135deg, #2563EB, #3B82F6);
+
+Creative gradient
+
+background: linear-gradient(135deg, #3B82F6, #7C3AED);
+
+That little violet addition can give your UI/UX side more personality without making violet part of your main brand.
+
+Subtle background glow
+
+background: radial-gradient(
+    circle at 70% 30%,
+    rgba(59, 130, 246, 0.15),
+    transparent 45%
+);
+
+
+---
+
+6. Semantic Colours
+
+These are for feedback, not branding.
+
+Meaning	Hex	Usage
+
+Success	#22C55E	Successful action
+Success Light	#86EFAC	Success background/text
+Warning	#F59E0B	Warnings
+Warning Light	#FCD34D	Warning highlights
+Error	#EF4444	Errors
+Error Light	#FCA5A5	Error highlights
+Info	#38BDF8	Informational messages
+
+
+
+---
+
+7. Interactive States
+
+For your buttons and links:
+
+Primary button
+
+background: #3B82F6;
+color: #F8FAFC;
+
+Hover
+
+background: #2563EB;
+
+Active / pressed
+
+background: #1D4ED8;
+
+Disabled
+
+background: #1E293B;
+color: #64748B;
+
+Link
+
+color: #60A5FA;
+
+Link hover
+
+color: #93C5FD;
+
+
+---
+
+8. Portfolio-Specific Usage
+
+I'd structure your actual website roughly like this:
+
+VENRAW
+
+Background
+#080D18
+████████████████████████████████
+
+Primary text
+#F8FAFC
+████████████████
+
+Secondary text
+#CBD5E1
+████████████
+
+Brand blue
+#3B82F6
+████████
+
+Cards
+#151F32
+████████████████
+
+Borders
+#243044
+████████
+
+Muted text
+#64748B
+████████
+
+Recommended ratio
+
+65% — Deep navy / dark surfaces
+20% — White & gray typography
+10% — Electric blue
+5% — Other accents/semantic colours
+
+That keeps the blue from taking over the entire interface.
+
+
+---
+
+9. Figma Design Token Structure
+
+Since you're designing this in Figma, I'd organize your variables like this:
+
+VENRAW
+│
+├── Brand
+│   ├── Primary/50
+│   ├── Primary/100
+│   ├── Primary/200
+│   ├── Primary/300
+│   ├── Primary/400
+│   ├── Primary/500
+│   ├── Primary/600
+│   ├── Primary/700
+│   ├── Primary/800
+│   └── Primary/900
+│
+├── Background
+│   ├── 950
+│   ├── 900
+│   ├── 800
+│   ├── 700
+│   ├── 600
+│   └── 500
+│
+├── Text
+│   ├── Primary
+│   ├── Secondary
+│   ├── Tertiary
+│   ├── Muted
+│   └── Disabled
+│
+├── Border
+│   ├── Subtle
+│   ├── Default
+│   ├── Strong
+│   └── Accent
+│
+└── Semantic
+    ├── Success
+    ├── Warning
+    ├── Error
+    └── Info
+
+Your 5 most important colours
+
+If you don't want to create all the variables yet, start with these:
+
+#080D18  → Main Background
+#0F172A  → Section
+#151F32  → Card
+#F8FAFC  → Primary Text
+#3B82F6  → VENRAW Blue
+
+Those five alone are enough to build the entire first version of your portfolio.
+
+And unlike the burgundy palette we discussed earlier, this system isn't tied to the clothes in your current photograph. Your photography can change; VENRAW's visual identity stays consistent.
