@@ -244,6 +244,7 @@ nav ul{
 .project-list-heading h2 {
     font-size: clamp(12px, 1.8vw, 16px);
     white-space: nowrap;
+    color: #F8FAFC;
 }
 
 .project-list-heading a {
@@ -253,6 +254,7 @@ nav ul{
     display: inline-block;
     white-space: nowrap;
     border-radius: 30px;
+    font-weight: 600;
 }
 
 .project-intro {
