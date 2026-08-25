@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     font-family: 'inter', sans-serif;
-    background-color: #080d18;
+    
     color: #CBD5E1;
 }
 body::-webkit-scrollbar {
@@ -25,6 +25,12 @@ a, li {
 ================================================================*/
 
 /*--------------------NAV BAR---------------------------------*/
+
+.top-section {
+    background-color: #080d18;
+    display: flow-root;
+}
+
 .navLinks-logo {
     display: flex;
     justify-content: space-between;
@@ -205,6 +211,65 @@ nav ul{
 .social-account a:hover svg {
     fill: #ffffff;
 }
+
+
+
+
+
+
+/*===============================================================
+                         TOP SECTION
+================================================================*/
+
+.project-section {
+    background-color: #0d2747;
+    display: flow-root;
+}
+
+.project-list {
+    margin-block: 72px;
+    margin-inline: clamp(16px, 5vw, 40px);
+}
+
+.project-list-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 700px;
+    justify-content: space-between;
+    margin-inline: auto;
+}
+
+.project-list-heading h2 {
+    font-size: clamp(12px, 1.8vw, 16px);
+    white-space: nowrap;
+}
+
+.project-list-heading a {
+    background-color: #1d57d4;
+    padding: clamp(8px, 1.2vw, 12px) clamp(14px, 2.5vw, 16px);
+    font-size: clamp(12px, 1.5vw, 14px);
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 30px;
+}
+
+.project-intro {
+    width: 100%;
+    max-width: 700px;
+    margin-inline: auto;
+    margin-top: 24px;
+    font-size: clamp(12px, 1.8vw, 14px);
+    color: #a0b0c7;
+}
+
+
+
+
+
+
+
 
 
 
