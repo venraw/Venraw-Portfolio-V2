@@ -218,7 +218,7 @@ nav ul{
 
 
 /*===============================================================
-                         TOP SECTION
+                         PROJECT SECTION
 ================================================================*/
 
 .project-section {
@@ -248,13 +248,20 @@ nav ul{
 }
 
 .project-list-heading a {
-    background-color: #1d57d4;
+    background-color: transparent;
+    border: 1px solid #3b82f6;
     padding: clamp(8px, 1.2vw, 12px) clamp(14px, 2.5vw, 16px);
     font-size: clamp(12px, 1.5vw, 14px);
     display: inline-block;
     white-space: nowrap;
     border-radius: 30px;
     font-weight: 600;
+    transition: fill 0.3s ease;
+}
+
+.project-list-heading a:hover {
+    background-color: #3b82f6;
+    color: white;
 }
 
 .project-intro {
@@ -262,9 +269,95 @@ nav ul{
     max-width: 700px;
     margin-inline: auto;
     margin-top: 24px;
-    font-size: clamp(12px, 1.8vw, 14px);
+    font-size: clamp(14px, 1.8vw, 16px);
     color: #a0b0c7;
 }
+
+
+/*--------------------PROJECT CARD SECTION---------------------------------*/
+.project-card-all {
+    margin-block: 24px;
+}
+
+.project-card {
+    padding: 24px;
+    border-radius: 16px;
+    background: #102f52;
+    border: 1px solid #234c80;
+    width: 100%;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+
+    transition: transform 0.3s;
+
+    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); */
+}
+.project-card:hover {
+    transform: translateY(0);
+    border-color: #3b82f6;
+}
+
+
+.product-screenshot {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.project-type {
+    padding: 8px 16px;
+    font-size: clamp(10px, 1.8vw, 12px);
+    background: rgba(168, 85, 247, 0.15);
+    color: #c084fc;
+    width: max-content;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    
+}
+
+
+.project-card h3 {
+    width: 100%;
+    max-width: 400px;
+    
+    margin-bottom: 16px;
+    color: #f8fafc;
+    font-weight: 600;
+}
+
+.project-description {
+    width: 100%;
+    max-width: 400px;
+    font-size: clamp(12px, 1.8vw, 14px);
+    color: #94a3b8;
+    margin-bottom: 16px;
+}
+
+.project-tools {
+    font-size: clamp(10px, 1.8vw, 12px);
+    margin-bottom: 24px;
+    justify-content: flex-start;
+}
+
+.explore-btn {
+    font-size: clamp(12px, 1.8vw, 14px);
+    background: #1d57d4;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    
+    transition: transform 0.3s;
+}
+
+.explore-btn:hover {
+    transform: translateX(6px);
+}
+
+
 
 
 
@@ -332,7 +425,7 @@ nav ul{
         align-items: center;
        
         transform: translateX(100%);
-        transition: transform 0.6s;
+        transition: transform 0.5s;
 
         z-index: 1000;
     }
