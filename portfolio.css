@@ -224,6 +224,10 @@ nav ul{
 .project-section {
     background-color: #0d2747;
     display: flow-root;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-list {
@@ -277,10 +281,17 @@ nav ul{
 /*--------------------PROJECT CARD SECTION---------------------------------*/
 .project-card-all {
     margin-block: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+
+    width: 100%;
+    max-width: 1200px;
+   
 }
 
 .project-card {
-    padding: 24px;
+    padding: 32px 24px;
     border-radius: 16px;
     background: #102f52;
     border: 1px solid #234c80;
@@ -290,6 +301,8 @@ nav ul{
     flex-direction: column;
     align-items: flex-start;
     overflow: hidden;
+
+    justify-content: space-between;
 
     transition: transform 0.3s;
 
@@ -304,19 +317,33 @@ nav ul{
 .product-screenshot {
     width: 100%;
     max-width: 400px;
+    height: 200px;
     border-radius: 16px;
     margin-bottom: 16px;
+
+    object-fit: cover;
 }
 
-.project-type {
+.project-type, .project-type3, .project-type2 {
     padding: 8px 16px;
     font-size: clamp(10px, 1.8vw, 12px);
     background: rgba(58, 189, 248, 0.12);
+    /* border: 1px solid rgba(56, 189, 248, 0.3); */
     color: #38bdf8;
     width: max-content;
     margin-bottom: 16px;
     border-radius: 8px;
     font-weight: 600;
+}
+
+.project-type2 {
+    color: #a5b4fc;
+    background: rgba(129, 140, 248, 0.18);
+}
+
+.project-type3 {
+    color: #fda4af;
+    background: rgba(251, 113, 133, 0.18);
 }
 
 
@@ -341,8 +368,18 @@ nav ul{
     font-size: clamp(10px, 1.8vw, 12px);
     margin-bottom: 24px;
     justify-content: flex-start;
-
     font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.project-tools .tech-tag:not(:last-child)::after {
+    content: "•";
+    margin-left: 6px; 
+    color: #64748b;    
 }
 
 .explore-btn {
@@ -550,14 +587,11 @@ nav ul{
 
 
     /*--------------------PROJECT CARD SECTION---------------------------------*/
-   /* .project-card {
-        transition: none;
+    .project-card-all {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    
     }
-
-    .project-card:hover {
-        transform: none;
-    }
-        */
     
 
 }
