@@ -222,7 +222,7 @@ nav ul{
 ================================================================*/
 
 .project-section {
-    background-color: #0d2747;
+    background-color: #080d18;
     display: flow-root;
 
     display: flex;
@@ -268,7 +268,8 @@ nav ul{
 }
 
 .project-list-heading a:hover {
-    background-color: #3b82f6;
+    /*background-color: #1d57d4;*/
+    background-color: #2563eb;
     color: white;
 }
 
@@ -297,8 +298,8 @@ nav ul{
 .project-card {
     padding: 32px 24px;
     border-radius: 16px;
-    background: #102f52;
-    border: 1px solid #234c80;
+    background: #151f32;
+    border: 1px solid #243044;
     width: 100%;
     max-width: fit-content;
     display: flex;
@@ -314,7 +315,7 @@ nav ul{
 }
 .project-card:hover {
     transform: translateY(0);
-    border-color: #3b82f6;
+    border-color: #334155;
 }
 
 
@@ -435,7 +436,7 @@ font-size: clamp(14px, 1.8vw, 16px);
     width: 100%;
     max-width: 300px;
     padding: 16px;
-    background: #12385f;
+    background: #1e293b;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
