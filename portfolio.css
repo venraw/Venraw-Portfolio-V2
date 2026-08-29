@@ -231,7 +231,7 @@ nav ul{
 }
 
 .project-list {
-    margin-block: 72px;
+    margin: 72px 0;
     margin-inline: clamp(16px, 5vw, 40px);
 }
 
@@ -243,6 +243,10 @@ nav ul{
     max-width: 700px;
     justify-content: space-between;
     margin-inline: auto;
+}
+
+.project-heading-all {
+    margin-bottom: 32px;
 }
 
 .project-list-heading h2 {
@@ -275,19 +279,19 @@ nav ul{
     margin-top: 24px;
     font-size: clamp(14px, 1.8vw, 16px);
     color: #a0b0c7;
+    text-align: center;
 }
 
 
 /*--------------------PROJECT CARD SECTION---------------------------------*/
 .project-card-all {
-    margin-block: 24px;
+    margin-bottom: 24px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
 
     width: 100%;
-    max-width: 1200px;
-   
+    max-width: 1200px;  
 }
 
 .project-card {
@@ -396,6 +400,49 @@ nav ul{
     transform: translateX(6px);
 }
 
+
+
+/*--------------------MY EXPERTISE SECTION---------------------------------*/
+
+.expertise-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+font-size: clamp(14px, 1.8vw, 16px);
+    width: 100%;
+    max-width: 700px;
+    margin-inline: auto;
+}
+.expertise-heading p {
+    text-align: center;
+    color: #a0b0c7;
+    font-size: clamp(14px, 1.8vw, 16px);
+
+}
+.my-expertise {
+    padding: 16px;
+    margin-bottom: 72px;
+}
+
+.expertis-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    gap: 8px;
+    width: 100%;
+    max-width: 300px;
+    padding: 16px;
+    background: #12385f;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+}
+.expertis-card p {
+    font-size: clamp(12px, 1.8vw, 14px);
+}
 
 
 
