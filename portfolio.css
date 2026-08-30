@@ -411,11 +411,17 @@ nav ul{
     align-items: center;
     gap: 12px;
     margin-bottom: 24px;
-font-size: clamp(14px, 1.8vw, 16px);
+    font-size: clamp(14px, 1.8vw, 16px);
     width: 100%;
     max-width: 700px;
     margin-inline: auto;
 }
+
+.expertise-heading h2, .expertis-card h2 {
+    color: whitesmoke;
+}
+
+
 .expertise-heading p {
     text-align: center;
     color: #a0b0c7;
@@ -425,6 +431,12 @@ font-size: clamp(14px, 1.8vw, 16px);
 .my-expertise {
     padding: 16px;
     margin-bottom: 72px;
+}
+
+.expertise-card-all {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 
 .expertis-card {
@@ -443,6 +455,12 @@ font-size: clamp(14px, 1.8vw, 16px);
 }
 .expertis-card p {
     font-size: clamp(12px, 1.8vw, 14px);
+    color: #a0b0c7;
+}
+.photoshop, .illustrator, .github {
+    background-color: #dcebff;
+    padding: 2px;
+    border-radius: 8px;
 }
 
 
@@ -639,6 +657,12 @@ font-size: clamp(14px, 1.8vw, 16px);
         grid-template-columns: 1fr;
         gap: 24px;
     
+    }
+
+
+    /*--------------------MY EXPERTISE SECTION---------------------------------*/
+    .expertise-card-all {
+        grid-template-columns: 1fr; 
     }
     
 
