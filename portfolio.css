@@ -117,7 +117,7 @@ nav ul{
 }
 
 #brief-bio {
-    font-size: clamp(11px, 1.5vw, 13px);
+    font-size: clamp(12px, 1.5vw, 14px);
     color: #CBD5E1;
     line-height: 1.3;
 }
