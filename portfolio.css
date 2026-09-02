@@ -1,6 +1,7 @@
 * {
     padding:  0;
     margin: 0; 
+    box-sizing: border-box;
 }
 
 body {
@@ -421,6 +422,10 @@ nav ul{
     color: whitesmoke;
 }
 
+.expertis-card h2 {
+    font-size: clamp(14px, vw, 16px);
+}
+
 
 .expertise-heading p {
     text-align: center;
@@ -448,7 +453,9 @@ nav ul{
     width: 100%;
     max-width: 300px;
     padding: 16px;
-    background: #1e293b;
+    /*background: #1e293b;*/
+    background-color: #0c1321;
+    border: 1px solid #141f35;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
@@ -457,6 +464,10 @@ nav ul{
     font-size: clamp(12px, 1.8vw, 14px);
     color: #a0b0c7;
 }
+.expertis-card h2 {
+    font-size: clamp(16px, 0.45vw + 14.5px, 20px);
+}
+
 .photoshop, .illustrator, .github {
     background-color: #dcebff;
     padding: 2px;
@@ -479,12 +490,14 @@ nav ul{
 .my-offer-all {
     padding: 24px 0;
     margin-block: 0 72px;
-    background-color: #0c1321;
+    /*background-color: #0c1321;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     overflow: hidden;
+
+    gap: 24px;
 }
 
 .my-offer-heading {
@@ -513,9 +526,17 @@ nav ul{
 
 }
 
+.offer-card-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+
 .offer-card {
     width: 100%;
     max-width: 300px;
+    height: 230px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -523,6 +544,8 @@ nav ul{
     justify-content: center;
     text-align: center;
     padding: 16px;
+    border: 1px solid #344051;
+    border-radius: 16px;
 }
 
 .offer-card img {
@@ -535,13 +558,13 @@ nav ul{
 
 .offer-card h3 {
     color: white;
+    font-size: clamp(16px, 0.45vw + 14.5px, 20px);
 }
 
 .offer-card p {
     font-size: clamp(12px, 1.8vw, 14px);
     color: #a0b0c7;
 }
-
 
 
 
@@ -747,4 +770,11 @@ nav ul{
     }
     
 
-}
+    /*--------------------MY OFFER & BIO SECTION---------------------------------*/
+    .offer-card-list {
+    flex-direction: column;
+    }
+
+
+
+} 
