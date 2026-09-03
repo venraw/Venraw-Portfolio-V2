@@ -1,7 +1,7 @@
 * {
     padding:  0;
     margin: 0; 
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 body {
@@ -429,14 +429,16 @@ nav ul{
 
 .expertise-heading p {
     text-align: center;
-    color: #a0b0c7;
+    /*color: #a0b0c7;*/
     font-size: clamp(14px, 1.8vw, 16px);
-
 }
 .my-expertise {
     padding: 16px;
     margin-bottom: 72px;
 }
+
+
+/*--------------------MY EXPERTISE CARD---------------------------------*/
 
 .expertise-card-all {
     display: grid;
@@ -523,8 +525,11 @@ nav ul{
     text-align: center;
     font-size: clamp(12px, 1.8vw, 16px);
     width: 100%;
-
+    /*color: #a0b0c7;*/
 }
+
+
+/*--------------------OFFER CARD-------------------------------*/
 
 .offer-card-list {
     display: flex;
@@ -697,6 +702,12 @@ nav ul{
         color: #ffffff;
         font-size: 28px;
         cursor: pointer;
+        background-color: #3b83f625;
+
+        padding: 4px 8px;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
     }
 
     /*
