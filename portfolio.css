@@ -4,6 +4,7 @@
     /*box-sizing: border-box;*/
 }
 
+
 body {
     overflow-x: hidden;
     overflow-y: auto;
@@ -11,6 +12,7 @@ body {
     
     color: #CBD5E1;
 }
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -248,6 +250,7 @@ nav ul{
 
 .project-heading-all {
     margin-bottom: 32px;
+    justify-content: center;
 }
 
 .project-list-heading h2 {
@@ -289,11 +292,13 @@ nav ul{
 .project-card-all {
     margin-bottom: 24px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
     gap: 24px;
 
     width: 100%;
     max-width: 1200px;  
+
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .project-card {
@@ -435,6 +440,8 @@ nav ul{
 .my-expertise {
     padding: 16px;
     margin-bottom: 72px;
+    box-sizing: border-box;
+    margin-inline: auto;
 }
 
 
@@ -444,6 +451,8 @@ nav ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+
+    /*grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));*/
 }
 
 .expertis-card {
@@ -883,7 +892,37 @@ nav ul{
         justify-content: flex-start;
         gap: 8px;
         width: 250px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 16px;
+        border-radius: 16px;
+    }
+} 
+
+
+
+
+
+/* Triggers the moment the screen drops below 1041px */
+@media (max-width: 1052px) {
+
+    .expertise-card-all {
+        /* Automatically switches from 3 columns to 2 centered columns */
+        grid-template-columns: repeat(2, minmax(0, 320px));
+        justify-content: center;
+        justify-items: center;
+        gap: 20px;
     }
 
+    .expertis-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
 
-} 
+/* Adjusts cleanly for mobile screens (1 centered column) */
+@media (max-width: 600px) {
+
+    .expertise-card-all {
+        grid-template-columns: 1fr;
+    }
+}
