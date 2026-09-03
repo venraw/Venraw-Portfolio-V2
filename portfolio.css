@@ -491,7 +491,7 @@ nav ul{
 
 .my-offer-all {
     padding: 24px 0;
-    margin-block: 0 72px;
+    margin-bottom: 120px;
     /*background-color: #0c1321;*/
     display: flex;
     flex-direction: column;
@@ -572,6 +572,71 @@ nav ul{
     color: #a0b0c7;
 }
 
+
+/*--------------------BIO SECTION-------------------------------*/
+
+.my-bio-section {
+    padding-inline: 16px;
+    margin-bottom: 72px;
+}
+
+.bio-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 32px;
+    background: #94a3b809;
+    padding: 24px;
+    width: 100%;
+    max-width: 900px;
+    margin-inline: auto;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.bio-heading {
+    width: 100%;
+    max-width: 600px;
+}
+
+.bio-heading h1 {
+    color: #F8FAFC;
+    font-size: clamp(22px, 1.14vw + 18.3px, 32px);
+    margin-bottom: 16px;
+}
+.bio-heading p {
+    font-size: clamp(14px, 0.23vw + 13.3px, 16px);
+    line-height: 1.5;
+}
+
+.my-bio-section img {
+    width: 100%;
+    max-width: clamp(280px, 13.64vw + 236.4px, 350px);
+    aspect-ratio: 1023 / 1537;
+    object-fit: cover;
+    height: auto;
+    display: block;
+    /*border: 4px solid #94a3b856;*/
+    border-radius: 20px;
+}
+
+.second-paragraph {
+    margin-bottom: 24px;
+}
+
+.bio-fillup p {
+    font-size: clamp(12px, 1.8vw, 14px);
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.bio-fillup {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
 
 
@@ -787,6 +852,38 @@ nav ul{
     flex-direction: column;
     }
 
+
+    /*-------------------- BIO SECTION---------------------------------*/
+    .bio-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bio-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .my-bio-section img {
+        margin-inline: auto;  
+    }
+
+    .bio-fillup {
+        gap: 24px;
+    }
+
+    .bio-fillup p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: flex-start;
+        gap: 8px;
+        width: 250px;
+    }
 
 
 } 
