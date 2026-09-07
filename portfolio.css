@@ -734,6 +734,12 @@ nav ul{
     color: #0a66c2;
 }
 
+.contact-section a i {
+    font-size: 32px; 
+    width: 40px;     
+    text-align: center;
+}
+
 
 
 
