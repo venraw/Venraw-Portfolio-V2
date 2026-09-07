@@ -103,6 +103,15 @@ nav ul{
     gap: clamp(24px, 4vw, 48px);
 }
 
+
+.profile-picture {
+    width: clamp(280px, 35vw, 480px);
+    aspect-ratio: 1 / 1;          /* Forces a perfect 1:1 square ratio */
+    object-fit: cover;            
+    max-width: 100%;
+    height: auto;
+}
+
 .hero-text {
     display: flex;
     flex-direction: column;
@@ -460,10 +469,10 @@ nav ul{
     flex-direction: column;
     align-items: center;
     margin-inline: auto;
-    gap: 8px;
+    gap: clamp(6px, 1.5vw, 12px);
     width: 100%;
-    max-width: 300px;
-    padding: 16px;
+    max-width: clamp(220px, 85vw, 300px);
+    padding: clamp(12px, 3.5vw, 13.64vw);padding: 16px;
     /*background: #1e293b;*/
     background-color: #0c1321;
     border: 1px solid #141f35;
@@ -509,6 +518,7 @@ nav ul{
     overflow: hidden;
 
     gap: 24px;
+    margin-inline: auto;
 }
 
 .my-offer-heading {
@@ -549,18 +559,20 @@ nav ul{
 
 .offer-card {
     width: 100%;
-    max-width: 300px;
+    max-width: clamp(260px, 20vw + 180px, 300px);;
     /*height: 230px;*/
     min-height: clamp(180px, 5.68vw + 161.8px, 230px);
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: clamp(8px, 1.2vw, 14px);
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 16px;
     border: 1px solid #344051;
     border-radius: 16px;
+
+    margin-inline: auto;
 }
 
 .offer-card img {
@@ -646,6 +658,89 @@ nav ul{
     flex-direction: column;
     gap: 16px;
 }
+
+
+
+
+
+
+/*===============================================================
+                         OFFER & BIO SECTION 
+================================================================*/
+
+.get-intouch-footer {
+    background-color: #080d18;
+}
+.get-in-touch {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('cover picture.webp');
+    background-position: center;
+    background-size: cover;
+
+    margin-bottom: 72px;
+    padding: 32px;
+}
+.intouch-text {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+}
+.intouch-text h1 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+
+/*--------------------BIO SECTION-------------------------------*/
+
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin: 0 auto 72px auto;
+    padding: 16px;
+    max-width: 500px;
+}
+
+.contact-btn1, .contact-btn2, .contact-btn3, .contact-btn4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: #0f172a;
+    padding: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 120px;
+    font-size: 14px;
+    /*border: 1px solid rgba(255, 255, 255, 0.08);*/
+    border-radius: 8px;
+}
+
+.contact-btn1 {
+    color: #f59e0b;
+}
+.contact-btn2 {
+    color: #38bdf8;
+}
+.contact-btn3 {
+    color: #25d366;
+}
+.contact-btn4 {
+    color: #0a66c2;
+}
+
+
+
+
+
+
+
+
 
 
 
