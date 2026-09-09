@@ -678,7 +678,7 @@ nav ul{
     background-position: center;
     background-size: cover;
 
-    margin-bottom: 72px;
+    margin-bottom: 40px;
     padding: 32px;
 }
 .intouch-text {
@@ -691,6 +691,9 @@ nav ul{
     color: white;
     margin-bottom: 8px;
 }
+.intouch-text p {
+    font-size: clamp(12px, 1.8vw, 14px);
+}
 
 
 /*--------------------BIO SECTION-------------------------------*/
@@ -698,12 +701,14 @@ nav ul{
 .contact-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
     gap: 24px;
-    margin: 0 auto 72px auto;
+    /*margin: 0 auto 72px auto;*/
     padding: 16px;
+    width: 100%;
     max-width: 500px;
+    flex: 0 1 500px;
 }
 
 .contact-btn1, .contact-btn2, .contact-btn3, .contact-btn4 {
@@ -720,6 +725,14 @@ nav ul{
     font-size: 14px;
     /*border: 1px solid rgba(255, 255, 255, 0.08);*/
     border-radius: 8px;
+
+    text-decoration: none;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    height: 150px;
+}
+
+.contact-btn1:hover, .contact-btn2:hover, .contact-btn3:hover, .contact-btn4:hover {
+    transform: translateY(-4px);
 }
 
 .contact-btn1 {
@@ -742,6 +755,98 @@ nav ul{
     text-align: center;
 }
 
+
+
+
+/*--------------------FORM FILLING-------------------------------*/
+.form-all form {
+    width: 100%;
+}
+
+.form-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    margin: 0;
+    max-width: 500px;   
+    flex: 0 1 400px;;
+}
+
+.form-row,
+.form-group,
+.send-btn {
+    width: 100%;   /* now they hold their width even without stretch */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+.form-group input,
+.form-group textarea {
+    border: 1px solid #243044;
+    background: #151f32;
+    border-radius: 8px;
+    outline: none;
+    color: white;
+    /*font-weight: 600;*/
+    font-size: 14px;
+    padding: 12px 16px;
+    transition: all 0.3s ease;
+}
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #3b82f6;
+}
+
+.form-group label {
+    color: #9dadc4;
+}
+
+.send-btn {
+    border: none;
+    background: #1d57d4;
+    color: white;
+    font-weight: 500;
+    padding: 14px 16px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 250px;
+    cursor: pointer;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+}
+
+.form-contact {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.form-contact > .contact-section,
+.form-contact > .form-all {
+    flex-shrink: 0;
+}
 
 
 
@@ -999,6 +1104,47 @@ nav ul{
         padding: 16px;
         border-radius: 16px;
     }
+
+
+
+
+
+    /*-------------------- CONTACT & FORM SECTION---------------------------------*/
+
+    .form-contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .contact-section {
+        flex: none;
+        width: 100%;
+        max-width: 400px;
+        min-width: 0;      
+    }
+
+    .form-all {
+        flex: none;
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    .contact-section {
+    box-sizing: border-box;
+    }
+
+    .form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+    }
+
+
+
+
 } 
 
 
