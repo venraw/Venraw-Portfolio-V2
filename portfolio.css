@@ -1120,19 +1120,16 @@ nav ul{
     .contact-section {
         flex: none;
         width: 100%;
-        max-width: 400px;
-        min-width: 0;      
+        max-width: 600px;
+        min-width: 0;  
+        box-sizing: border-box;  
+        padding: 0;  
     }
 
     .form-all {
         flex: none;
         width: 100%;
         max-width: 400px;
-    }
-
-
-    .contact-section {
-    box-sizing: border-box;
     }
 
     .form-row {
