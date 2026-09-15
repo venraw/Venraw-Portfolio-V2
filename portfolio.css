@@ -823,7 +823,7 @@ nav ul{
     gap: 8px;
     border: none;
     background: #1d57d4;
-    color: white;
+    color: #F8FAFC;
     font-weight: 500;
     padding: 14px 16px;
     border-radius: 20px;
@@ -883,7 +883,7 @@ nav ul{
     margin-top: 48px;
     margin-bottom: 40px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin-inline:  auto;
     /*width: 1200px;*/
@@ -922,10 +922,12 @@ nav ul{
 }
 .quick-links h2 {
     margin-bottom: 8px;
+    color: #dcebff;
 }
 .quick-links a {
     font-size: clamp(12px, 1.8vw, 14px);
     padding: 8px;
+    color: #9dadc4;
 }
 
 .rights-reserved {
