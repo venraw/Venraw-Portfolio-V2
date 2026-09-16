@@ -309,6 +309,7 @@ nav ul{
     max-width: 1200px;  
 
     grid-template-columns: repeat(3, 1fr);
+    box-sizing: border-box;
 }
 
 .project-card {
@@ -463,6 +464,8 @@ nav ul{
     gap: 24px;
 
     /*grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));*/
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .expertis-card {
@@ -472,18 +475,22 @@ nav ul{
     margin-inline: auto;
     gap: clamp(6px, 1.5vw, 12px);
     width: 100%;
-    max-width: clamp(220px, 85vw, 300px);
-    padding: clamp(12px, 3.5vw, 13.64vw);padding: 16px;
+    /*max-width: clamp(220px, 85vw, 300px);*/
+    max-width: fit-content;
+    padding: clamp(12px, 3.5vw, 13.64vw);
     /*background: #1e293b;*/
     background-color: #0c1321;
     border: 1px solid #141f35;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+    box-sizing: border-box;
 }
 .expertis-card p {
     font-size: clamp(12px, 1.8vw, 14px);
     color: #a0b0c7;
+    width: 100%;
+    max-width: 220px;
 }
 .expertis-card h2 {
     font-size: clamp(16px, 0.45vw + 14.5px, 20px);
@@ -516,7 +523,8 @@ nav ul{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    overflow: hidden;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
 
     gap: 24px;
     margin-inline: auto;
@@ -555,6 +563,8 @@ nav ul{
     display: flex;
     align-items: center;
     gap: 24px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 
@@ -574,6 +584,9 @@ nav ul{
     border-radius: 16px;
 
     margin-inline: auto;
+    height: 100%;
+    max-height: 250px;
+    box-sizing: border-box;
 }
 
 .offer-card img {
@@ -586,12 +599,14 @@ nav ul{
 
 .offer-card h3 {
     color: white;
-    font-size: clamp(16px, 0.45vw + 14.5px, 20px);
+    font-size: clamp(12px, 0.45vw + 14.5px, 16px);
 }
 
 .offer-card p {
-    font-size: clamp(12px, 1.8vw, 14px);
+    font-size: clamp(10px, 1.8vw, 14px);
     color: #a0b0c7;
+    width: 100%;
+    max-width: 190px;
 }
 
 
@@ -911,6 +926,7 @@ nav ul{
     width: 100%;
     text-align: center;
     font-size: clamp(12px, 1.8vw, 14px);
+    color: #9dadc4;
 }
 
 .quick-links {
@@ -922,12 +938,18 @@ nav ul{
 }
 .quick-links h2 {
     margin-bottom: 8px;
-    color: #dcebff;
+    color: white;
 }
 .quick-links a {
     font-size: clamp(12px, 1.8vw, 14px);
     padding: 8px;
     color: #9dadc4;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.quick-links a:hover {
+    color: #38bdf8; 
+    transform: translateX(4px);
 }
 
 .rights-reserved {
