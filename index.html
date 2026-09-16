@@ -435,22 +435,25 @@
 
                     </div>
 
-                    <div class="form-all">
-                        <form action="https://api.web3forms.com/submit" method="POST">
+                   <div class="form-all">
+                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="7becaadd-bcbf-43ae-8bd9-9f5692183024">
+                            <input type="hidden" name="subject" value="New Portfolio Message from Client">
+                            
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="name">Your Name</label>
-                                    <input type="hidden" id="name" name="access_key" value="7becaadd-bcbf-43ae-8bd9-9f5692183024" placeholder="John Doe" required>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="email">Your Email</label>
-                                    <input type="hidden" id="email" name="Subject" value="New Portfolio Message from Client" placeholder="john@example.com" required>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="name">Subject</label>
-                                    <input type="text" id="email" name="email" placeholder="john@example.com" required>
+                                    <label for="user-subject">Subject</label>
+                                    <input type="text" id="user-subject" name="user_subject" placeholder="Project Inquiry" required>
                                 </div>
 
                                 <div class="form-group">
@@ -461,7 +464,9 @@
                                 <button type="submit" class="send-btn">
                                     Send Message <i class="fa-solid fa-paper-plane"></i>
                                 </button>
-                                                
+
+                                <!-- Status message output -->
+                                <div id="form-result" style="margin-top: 15px; font-size: 14px;"></div>
                             </div>
                         </form>
                     </div>
