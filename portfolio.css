@@ -225,6 +225,17 @@ nav ul{
     fill: #ffffff;
 }
 
+.each-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.each-social p {
+    font-size: 14px;
+}
+
 
 
 
@@ -410,6 +421,10 @@ nav ul{
     padding: 8px 16px;
     border-radius: 20px;
     border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
     
     transition: transform 0.3s;
 }
@@ -845,6 +860,12 @@ nav ul{
     width: 100%;
     max-width: 250px;
     cursor: pointer;
+
+    transition: ease-in-out 0.3s;
+}
+
+.send-btn:hover {
+    background: #113279;
 }
 
 .form-row {
