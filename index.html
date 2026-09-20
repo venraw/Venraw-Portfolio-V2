@@ -16,6 +16,9 @@
     <title>Venraw Portfolio</title>
 </head>
 <body>
+    <button class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
     
     <!-- ======================================================================= -->
     <!-- TOP SECTION                                                            -->
@@ -531,7 +534,7 @@
 
 
 
-
+<!---
     <script>
 
         const menuBtn = document.querySelector('.menu-btn');
@@ -559,6 +562,28 @@
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+    
+    <script>
+        const scrollBtn = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (scrollY > 800) {
+                scrollBtn.classList.add('show')
+            } else {
+                scrollBtn.classList.remove('show')
+            }
+        });
+
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    -->
+
+    <script src="portfolio.js"></script>
     
     
 </body>
