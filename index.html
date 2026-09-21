@@ -13,6 +13,9 @@
     <!--------CSS STYLE SHEET------------------->
     <link rel="stylesheet" href="portfolio.css">
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Venraw Portfolio</title>
 </head>
 <body>
@@ -39,23 +42,23 @@
                     <ul>
                         <button class="close-btn" id="close-btn">&times;</button>
 
-                        <li class="nav-link2">
+                        <li class="nav-link2" data-aos="zoom-in">
                             <a href="#projectSection">Projects</a>
                         </li>
                         
-                        <li class="nav-link2">
+                        <li class="nav-link2" data-aos="zoom-in">
                             <a href="#expertiseSection">Skills</a>
                         </li>
 
-                        <li class="nav-link2">
+                        <li class="nav-link2" data-aos="zoom-in">
                             <a href="#toServices">Services</a>
                         </li>
 
-                        <li class="nav-link2">
+                        <li class="nav-link2" data-aos="zoom-in">
                             <a href="#bioSection">About</a>
                         </li>
 
-                        <li>
+                        <li data-aos="fade-left">
                             <a href="#footerContact" class="contacts">Contacts</a>
                         </li>
                     </ul>
@@ -63,7 +66,7 @@
             </nav>
 
             <button class="menu-btn" aria-label="Toggle Menu">
-                <i class="fa-solid fa-bars" class="menu-btn"></i>
+                <i class="fa-solid fa-bars" menu-btn></i>
             </button>
 
         </header>
@@ -584,6 +587,15 @@
     -->
 
     <script src="portfolio.js"></script>
+
+    <!-- AOS JavaScript -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration in milliseconds (1 second)
+    once: true,     // Whether animation should happen only once while scrolling down
+  });
+</script>
     
     
 </body>
