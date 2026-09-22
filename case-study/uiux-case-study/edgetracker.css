@@ -1,0 +1,30 @@
+* {
+    color: #F8FAFC;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.head-image img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;  
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-inline: 16px;
+    margin-bottom: 24px;
+}
+
+.header-text h1 {
+    font-size: 64px;
+}
+.header-text p {
+    color: #B0BAC5;
+    font-size: 32px;
+}
