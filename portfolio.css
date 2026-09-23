@@ -8,6 +8,11 @@ html {
     /*box-sizing: border-box;*/
 }
 
+@view-transition {
+    navigation: auto;
+}
+
+
 
 body {
     overflow-x: hidden;
