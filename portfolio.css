@@ -403,7 +403,7 @@ nav ul{
     border-radius: 16px;
     margin-bottom: 16px;
 
-    object-fit: fit;
+    object-fit: cover;
     box-sizing: border-box;
 }
 
