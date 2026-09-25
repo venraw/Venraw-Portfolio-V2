@@ -96,9 +96,139 @@
 
     </div>
 
+    <div class="market-research">
+        <div class="text-chart">
+            <div class="market-research-text">
+                <h1>Market Research</h1>
+                <div class="research-summary">
+                    <p class="summary-head">Market research summary</p>
+                    <p class="summary-head-p">
+                    My experience with trading exposed a problem I wanted to solve: it was difficult to connect my trading decisions, behaviour, and performance in one continuous experience.
+                    
+                    I designed EdgeTracker to help traders understand their decisions, recognize risky behaviour, and stay in control of their trading process.
+                    </p>
+                </div>
+            </div>
+
+            <div class="chart-card">
+            <!-- Callout Badge -->
+            <div class="chart-callout">$16.9B</div>
+
+            <!-- Y-Axis Labels -->
+            <div class="y-labels">
+                <span class="y-label label-11">$11B</span>
+                <span class="y-label label-5">$5B</span>
+                <span class="y-label label-4">$4B</span>
+            </div>
+
+            <!-- Chart Surface (SVG) -->
+            <div class="chart-svg-wrap">
+                <svg viewBox="0 0 400 240" class="chart-svg">
+                    <!-- Left Vertical Axis Line -->
+                    <line x1="0" y1="20" x2="0" y2="220" stroke="#22304a" stroke-width="1.5" />
+
+                    <!-- Top $11B Gridline -->
+                    <line x1="0" y1="20" x2="400" y2="20" stroke="#22304a" stroke-width="1.5" />
+
+                    <!-- Middle $5B Gridline -->
+                    <line x1="0" y1="130" x2="400" y2="130" stroke="#22304a" stroke-width="1.5" />
+
+                    <!-- Bottom Horizontal Axis Line ($4B) -->
+                    <line x1="0" y1="220" x2="400" y2="220" stroke="#22304a" stroke-width="1.5" />
+                    
+                    <!-- Curve Path -->
+                    <path d="M 5 215 C 35 175, 50 170, 70 185 C 90 200, 110 180, 140 150 C 170 120, 190 160, 220 160 C 250 160, 260 70, 290 80 C 320 90, 340 130, 360 80 C 380 30, 385 20, 390 15" 
+            fill="none" 
+            stroke="#22c55e" 
+            stroke-width="3.5" 
+            stroke-linecap="round" />
+
+                    <!-- End Point Dot -->
+                    <circle cx="390" cy="15" r="7" fill="#22c55e" stroke="#151f32" stroke-width="3.5" />
+                </svg>
+            </div>
+
+            <!-- X-Axis Labels -->
+            <div class="x-labels">
+                <span>2021</span>
+                <span>2023</span>
+                <span>2025</span>
+            </div>
+            </div>
+
+            <!-- Chart.js CDN -->
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        </div>
+
+        <div class="market-growth">
+            <p class="market-growth-head">Market Growth</p>
+            <p class="market-growth-p">
+                The trading software market is growing rapidly, with the global stock trading analysis software market estimated at $11.18B in 2025 and projected to reach $38.65B by 2032. This growth reflects increasing demand for tools that help traders analyse performance, behaviour, and decision making.
+            </p>
+        </div>
+        
+    </div>
+    
 
 
 
+
+<script>
+    const ctx = document.getElementById('revenueChart');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2021', '', '2023', '', '2025'],
+                datasets: [{
+                    data: [4, 4.8, 5.8, 8.2, 16.9],
+                    borderColor: '#22c55e',
+                    borderWidth: 3,
+                    tension: 0.4,
+                    pointRadius: (ctx) => ctx.dataIndex === ctx.dataset.data.length - 1 ? 7 : 0,
+                    pointBackgroundColor: '#22c55e',
+                    pointBorderColor: '#151f32',
+                    pointBorderWidth: 3,
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { enabled: false }
+                },
+                scales: {
+                    x: {
+                        grid: { display: false },
+                        ticks: {
+                            color: '#F8FAFC',
+                            font: { weight: 'bold', size: 14 }
+                        }
+                    },
+                    y: {
+                        min: 4,
+                        max: 18,
+                        // Manually injects ticks only at 4, 5, and 11
+                        afterBuildTicks: (axis) => {
+                            axis.ticks = [4, 5, 11].map(v => ({ value: v }));
+                        },
+                        grid: {
+                            color: (context) => {
+                                // Exactly 1 line across at 5B
+                                return context.tick.value === 5 ? '#22304a' : 'transparent';
+                            }
+                        },
+                        ticks: {
+                            callback: (value) => `$${value}B`,
+                            color: '#F8FAFC',
+                            font: { weight: 'bold', size: 14 }
+                        }
+                    }
+                }
+            }
+        });
+</script>
     
 </body>
 </html>
