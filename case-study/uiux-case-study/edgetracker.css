@@ -398,6 +398,7 @@ body {
     width: 100%;
     padding-inline: 16px;
     box-sizing: border-box;
+    margin-bottom: 48px;
 }
 
 .posit-negative ul {
@@ -415,4 +416,138 @@ body {
     color: #B0BAC5;
     margin-bottom: 8px;
     font-size: clamp(0.625rem, 0.4vw + 0.525rem, 0.875rem);
+}
+
+
+
+
+
+/*-------------------------------NOTABLE COMMENTS----------------------------------*/
+.notable-comment-all h3{
+    margin-bottom: clamp(0.75rem, 1.5vw, 1rem);
+    font-size: clamp(1rem, 0.5vw + 0.875rem, 1.375rem);
+}
+
+.notable-comment {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: clamp(0.75rem, 2vw, 1.5rem);;
+}
+
+.notable-comment-card {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: clamp(0.625rem, 1.2vw, 1rem);
+    background: #151B23;
+    padding: 16px;
+    width: 100%;
+    max-width: clamp(260px, 45vw, 300px);
+    min-height: clamp(84px, 12vw, 100px);
+    border-radius: 8px;
+    border: 1px solid #2A3441;
+}
+
+.notable-comment-img1,
+.notable-comment-img2,
+.notable-comment-img3 {
+    width: clamp(2rem, 3.5vw, 2.5rem);
+    height: clamp(2rem, 3.5vw, 2.5rem);
+    flex-shrink: 0;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+.notable-comment-img1 img,
+/*.notable-comment-img2 img,*/
+.notable-comment-img3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.notable-comment-img2 p, 
+.notable-comment-img3 p {
+    color: #151B23;
+    font-weight: 700;
+    font-size: clamp(0.6875rem, 0.5vw + 0.55rem, 0.875rem);
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notable-comment-img2 p {
+    background: #F8FAFC;
+}
+
+.notable-comment-img3 p {
+    background: #00C3D0;
+}
+
+.notable-comment-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.comment-text1 {
+    font-size: clamp(0.75rem, 0.4vw + 0.65rem, 0.875rem);
+    color: #B0BAC5;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.comment-text2 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+ 2. MOBILE PHONES (Max-width: 480px) - MEDIA QUERY
+--------------------------------------------------------------*/
+
+@media (max-width: 480px) { 
+    .notable-comment-all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .notable-comment {
+        align-items: center;
+        justify-content: center;
+    }
+
 }
