@@ -920,7 +920,7 @@ body {
 .goal-list {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: clamp(1rem, 1.82vw + 0.636rem, 2rem);
     align-items: flex-start;
     width: 100%;
     max-width: 400px;
@@ -946,7 +946,8 @@ body {
     flex-wrap: wrap;
     align-items: stretch;
     background: #151b235a;
-    border: 1px solid #2a34418a;
+    border-bottom: 1px solid #2a34418a;
+    border-top: 1px solid #2a34418a;
 }
 
 
