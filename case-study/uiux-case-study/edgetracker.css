@@ -1151,7 +1151,7 @@ body {
 .Low-Fidelity-heading {
     width: 100%;
     max-width: 800px;
-    margin-bottom: 48px;
+    margin-bottom: clamp(2.5rem, 2.73vw + 1.955rem, 4rem);
 }
 
 .Low-Fidelity-heading h1{
@@ -1200,7 +1200,7 @@ body {
 .high-Fidelity-heading {
     width: 100%;
     max-width: 800px;
-    margin-bottom: 48px;
+    margin-bottom: clamp(2.5rem, 2.73vw + 1.955rem, 4rem);
 }
 
 .high-Fidelity-heading h1{
@@ -1223,7 +1223,6 @@ body {
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
-    margin-bottom: 40px;
 }
 
 .color-pallete-text,
@@ -1265,6 +1264,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 24px;
+
+    margin-bottom: clamp(2.5rem, 2.73vw + 1.955rem, 4rem);
 }
 
 .high-Fidelity-svg {
