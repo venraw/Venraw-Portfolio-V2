@@ -1032,9 +1032,9 @@ body {
 }
 
 .user-flow-heading {
-     margin-inline: clamp(1rem, 3vw, 2rem);
+    margin-inline: clamp(1rem, 3vw, 2rem);
 
-    margin: 0 auto;
+    margin:  auto;
     width: 100%;
     max-width: 1050px;
     display: flex;
