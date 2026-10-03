@@ -152,7 +152,6 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    margin-inline: 16px;
     flex-wrap: wrap;
     margin-inline: clamp(16px, 4vw, 32px);
 }
@@ -207,7 +206,7 @@ body {
 .market-research {
     padding: clamp(1rem, 3vw, 2rem);
     background: #151B23;
-    margin-bottom: 48px;
+    margin-bottom: clamp(4rem, 3.64vw + 3.273rem, 6rem);
 }
 
 .text-chart {
@@ -315,7 +314,7 @@ body {
 /*----------------------------------EQUITY CURVE------------------------------------------*/
 .competitive-analysis {
     margin-inline: clamp(1rem, 3vw, 2rem);
-    margin-bottom: 48px;
+    margin-bottom: clamp(4rem, 3.64vw + 3.273rem, 6rem);
 }
 
 .competitive-analysis-text {
@@ -524,7 +523,7 @@ body {
 /*-------------------------------USER SURVEY----------------------------------*/
 
 .user-survey-all {
-    margin-bottom: 48px;
+    margin-bottom: clamp(4rem, 3.64vw + 3.273rem, 6rem);
     padding: clamp(1rem, 3vw, 2rem);
     background: #151b234a;
 }
@@ -742,7 +741,7 @@ body {
 /*-------------------------------INITIAL RESEARCH SHOW----------------------------------*/
 .initial-research-all {
     margin-inline: clamp(1rem, 3vw, 2rem);
-    margin-bottom: 48px;
+    margin-bottom: clamp(4rem, 3.64vw + 3.273rem, 6rem);
 
     display: flex;
     align-items: center;
@@ -754,7 +753,7 @@ body {
 
 .initial-research {
     display: flex;
-    flex-direction: column;justify-content: center;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -776,7 +775,7 @@ body {
 .initial-research-text {
     width: 100%;
     max-width: 400px;
-    font-size: clamp(0.875rem, 0.35vw + 0.8rem, 1.125rem);
+    /*font-size: clamp(0.875rem, 0.35vw + 0.8rem, 1.125rem);*/
     padding: 8px;
     border: 1px solid #2A3441;
     border-radius: 8px;
@@ -809,10 +808,13 @@ body {
 
 
 
-/*-------------------------------PERSONAS----------------------------------*/
+/*====================================================================================
+----------------------------------PERSONAS-------------------------------------------
+=======================================================================================*/
 .personas {
-    /*margin-inline: 16px;*/
-    margin-bottom: 48px;
+    margin-bottom: clamp(4rem, 3.64vw + 3.273rem, 6rem);
+    display: flex;
+    flex-direction: column;
 }
 
 .personas-heading {
@@ -823,6 +825,7 @@ body {
 .personas-heading h1 {
     font-size: clamp(1.5rem, 4vw + 0.5rem, 3rem);
     margin-bottom: 16px;
+    color: #F8FAFC;
 }
 
 .personas-heading p {
@@ -876,13 +879,14 @@ body {
 
 .edgetracker-owner {
     color: #22c55e;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
 }
 
 .quote {
     font-size: 12px;
     color: #F8FAFC;
+    text-align: center;
 }
 
 
@@ -935,11 +939,11 @@ body {
     flex-wrap: wrap;
     /*padding-inline: 16px;
     max-width: 800px;*/
-    gap: 48px;
+    gap: clamp(2rem, 0.91vw + 1.818rem, 2.5rem);
     margin-bottom: 40px;
 }
 
-.personas-individual {
+.personas-individual, .personas-individual2 {
     display: flex;
     gap: 16px;
     box-sizing: border-box;
@@ -948,6 +952,9 @@ body {
     background: #151b235a;
     border-bottom: 1px solid #2a34418a;
     border-top: 1px solid #2a34418a;
+}
+.personas-individual {
+    margin-bottom: 48px;
 }
 
 
@@ -1016,6 +1023,125 @@ body {
 
 
 
+/*====================================================================================
+----------------------------------FLOW DIAGRAM---------------------------------------
+=======================================================================================*/
+
+.user-flow-section {
+    margin-bottom: clamp(4rem, 3.64vw + 3.273rem, 6rem);
+}
+
+.user-flow-heading {
+     margin-inline: clamp(1rem, 3vw, 2rem);
+
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(1.5rem, 3vw + 0.5rem, 3rem);
+    margin-bottom: 0;
+
+    position: relative;
+    z-index: 2;
+
+    transform: translateY(clamp(0rem, 2vw, 2.5rem));
+}
+
+.user-flow-image img{
+    width: 100%;
+    max-width: clamp(220px, 35vw, 400px);
+    height: auto;
+    object-fit: contain;
+}
+
+.user-flow-image {
+    flex-shrink: 0;
+    width: clamp(220px, 35vw, 400px);
+    display: flex;
+    justify-content: center;
+}
+
+.user-flow-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.user-flow-text h3{
+    font-size: clamp(1rem, 0.5vw + 0.875rem, 1.375rem);
+    margin-bottom: 8px;
+    color: #F8FAFC;
+}
+.user-flow-text p {
+    color: #B0BAC5;
+    font-size: clamp(0.75rem, 1vw + 0.55rem, 1.25rem);
+    line-height: 1.4;
+}
+
+.user-flow-main-text {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: clamp(2rem, 1.82vw + 1.636rem, 3rem);
+}
+
+.user-flow-main-text h1{
+    font-size: clamp(1.5rem, 4vw + 0.5rem, 3rem);
+    color: #F8FAFC;
+}
+.user-flow-main-text p {
+    color: #B0BAC5;
+    font-size: clamp(0.75rem, 1vw + 0.55rem, 1.25rem);
+    line-height: 1.4;
+}
+
+
+
+
+
+.user-flow-wrapper {
+    background: #151b2380;
+    padding-inline:  clamp(1rem, 3vw, 2rem);
+    padding-bottom: 24px;
+    padding-top: clamp(2rem, 1.82vw + 1.636rem, 3rem);
+    margin-top: clamp(-2rem, -2vw, -3rem);
+
+    position: relative;
+    z-index: 1;
+}
+
+.main-user-flow h3 {
+    font-size: clamp(1rem, 0.5vw + 0.875rem, 1.375rem);
+    margin-bottom: clamp(1.5rem, 0.91vw + 1.318rem, 2rem);
+    color: #F8FAFC;
+}
+
+.flow-diagram {
+    width: 100%;
+    max-width: 1000px;   
+    height: auto;        
+    display: block;
+}
+
+.main-user-flow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1063,5 +1189,19 @@ body {
         min-height: 0;
         aspect-ratio: 4 / 5;   
         margin-inline: auto;
+    }
+
+
+    .personas-individual2 .personas-image {
+        order: -1; 
+    }
+
+    .user-flow-heading {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .user-flow-heading .user-flow-text {
+        order: -1;
     }
 }
