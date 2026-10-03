@@ -80,13 +80,6 @@ body {
     gap: 16px;
 }
 
-/*.about-project-wrap {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    justify-content: space-between;
-} */
-
 .about-project {
     display: flex;
     flex-direction: column;
@@ -108,7 +101,10 @@ body {
 }
 
 
-/*----------------------------REASON FOR PROJECT--------------------------------------*/
+
+/*====================================================================================
+----------------------------------REASON FOR PROJECT----------------------------------
+=======================================================================================*/
 
 .reason-img img{
     width: 100%;
@@ -125,23 +121,19 @@ body {
 }
 
 .reason-text {
-    /*width: 900px;*/
     flex: 1 1 300px;
     max-width: 800px;
 }
 .reason-text p {
-    /*font-size: 20px;*/
     color: #B0BAC5;
 
     font-size: clamp(0.75rem, 1vw + 0.55rem, 1.25rem);
     line-height: 1.6;
 }
 .reason-text h1 {
-    /*font-size: 40px;*/
     color: #F8FAFC;
     margin-bottom: 8px;
 
-    /*font-size: clamp(0.875rem, 3.2vw + 0.25rem, 2.5rem);*/
     font-size: clamp(1.5rem, 4vw + 0.5rem, 3rem);
     line-height: 1.2;
     margin-bottom: clamp(8px, 1.5vw, 16px);
@@ -157,7 +149,10 @@ body {
 }
 
 
-/*----------------------------MARKET RESEARCH--------------------------------------*/
+/*====================================================================================
+----------------------------------MARKET RESEARCH ------------------------------------
+=======================================================================================*/
+
 .market-research-text {
     width: 100%;
     max-width: 600px;
@@ -202,7 +197,6 @@ body {
     font-size: clamp(0.75rem, 1vw + 0.55rem, 1.25rem);
 }
 
-
 .market-research {
     padding: clamp(1rem, 3vw, 2rem);
     background: #151B23;
@@ -238,11 +232,11 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-/* Callout Badge - Shifted further left to leave space for the dot */
+
 .chart-callout {
     position: absolute;
     top: clamp(10px, 3vw, 14px);
-    right: 15%; /* Increased from 50px to prevent overlapping dot */
+    right: 15%; 
     background: #22c55e;
     color: #F8FAFC;
     font-weight: 700;
@@ -297,7 +291,7 @@ body {
     transform-origin: bottom;
 }
 
-/* X-Axis Labels */
+
 .x-labels {
     display: flex;
     justify-content: space-between;
@@ -310,8 +304,9 @@ body {
 
 
 
-
-/*----------------------------------EQUITY CURVE------------------------------------------*/
+/*====================================================================================
+----------------------------------EQUITY CURVE---------------------------------------
+=======================================================================================*/
 .competitive-analysis {
     margin-inline: clamp(1rem, 3vw, 2rem);
     margin-bottom: clamp(4rem, 3.64vw + 3.273rem, 6rem);
@@ -519,8 +514,9 @@ body {
 
 
 
-
-/*-------------------------------USER SURVEY----------------------------------*/
+/*====================================================================================
+----------------------------------FUSER SURVEY---------------------------------------
+=======================================================================================*/
 
 .user-survey-all {
     margin-bottom: clamp(4rem, 3.64vw + 3.273rem, 6rem);
@@ -737,8 +733,10 @@ body {
 
 
 
+/*====================================================================================
+----------------------------------INITIAL RESEARCH SHOW--------------------------------
+=======================================================================================*/
 
-/*-------------------------------INITIAL RESEARCH SHOW----------------------------------*/
 .initial-research-all {
     margin-inline: clamp(1rem, 3vw, 2rem);
     margin-bottom: clamp(4rem, 3.64vw + 3.273rem, 6rem);
@@ -1066,6 +1064,7 @@ body {
 .user-flow-text {
     flex: 1;
     max-width: 500px;
+    margin-inline: clamp(1rem, 3vw, 2rem);
 }
 
 .user-flow-text h3{
@@ -1100,7 +1099,7 @@ body {
 
 
 
-
+/*-------------------------------MAIN USER FLOW DIAGRAM----------------------------------*/
 
 .user-flow-wrapper {
     background: #151b2380;
@@ -1132,6 +1131,162 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+
+
+
+
+/*====================================================================================
+----------------------------LOW FIDELITY WIREFRAME------------------------------------
+=======================================================================================*/
+
+.Low-Fidelity-section {
+    margin-inline: clamp(1rem, 3vw, 2rem);
+    margin-bottom: clamp(4rem, 3.64vw + 3.273rem, 6rem);
+}
+
+.Low-Fidelity-heading {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 48px;
+}
+
+.Low-Fidelity-heading h1{
+    font-size: clamp(1.5rem, 4vw + 0.5rem, 3rem);
+    color: #F8FAFC;
+    margin-bottom: 8px;
+}
+
+.Low-Fidelity-heading p {
+    color: #B0BAC5;
+    font-size: clamp(0.75rem, 1vw + 0.55rem, 1.25rem);
+    line-height: 1.4;
+}
+
+.Low-Fidelity-svg {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+}
+
+.Low-Fidelity-svg-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*====================================================================================
+----------------------------HIGH FIDELITY WIREFRAME------------------------------------
+=======================================================================================*/
+
+.high-fidelity-section {
+    margin-inline: clamp(1rem, 3vw, 2rem);
+    margin-bottom: clamp(4rem, 3.64vw + 3.273rem, 6rem);
+}
+
+.high-Fidelity-heading {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 48px;
+}
+
+.high-Fidelity-heading h1{
+    font-size: clamp(1.5rem, 4vw + 0.5rem, 3rem);
+    color: #F8FAFC;
+    margin-bottom: 8px;
+}
+
+.high-Fidelity-heading p {
+    color: #B0BAC5;
+    font-size: clamp(0.75rem, 1vw + 0.55rem, 1.25rem);
+    line-height: 1.4;
+}
+
+
+
+.color-pallete-section,
+.font-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.color-pallete-text,
+.font-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.color-heading,
+.font-heading {
+    color: #B0BAC5;
+    font-weight: 600;
+}
+
+.all-color,
+.all-fonts {
+    color: #F8FAFC;
+    font-weight: 800;
+    font-size:  18px;
+}
+
+.color-pallete-svg {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.font-type {
+    font-size: 24px;
+    color: #F8FAFC;
+    font-weight: 800;
+}
+
+.high-Fidelity-detail {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.high-Fidelity-svg {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.high-Fidelity-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
 
 
 
