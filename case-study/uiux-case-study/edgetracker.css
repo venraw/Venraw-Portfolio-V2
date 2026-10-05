@@ -1150,7 +1150,7 @@ body {
 
 .Low-Fidelity-heading {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     margin-bottom: clamp(2.5rem, 2.73vw + 1.955rem, 4rem);
 }
 
