@@ -1421,7 +1421,64 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
+
+
+/*-------------------------------PROTOTYPE BTN----------------------------------*/
+.prototype-btn {
+    flex: 0 0 auto; 
+    max-width: 100%;
+    min-height: 48px;            
+    padding: 0 24px;
+    background: #1d57d4;
+    color: #F8FAFC;              
+    font-weight: 600;
+    border-radius: 999px;
+    text-decoration: none;
+
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    font-size: clamp(0.75rem, 1vw + 0.55rem, 1.25rem);
+}
+
+.prototype-btn:hover,
+.prototype-btn:focus-visible {
+    background: #1d57d4ac;
+}
+
+.prototype-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.prototype-btn-wrapper p {
+    flex: 1 1 280px;           
+    max-width: 600px;
+    margin: 0;
+    font-size: clamp(0.75rem, 1vw + 0.55rem, 1.25rem);
+    line-height: 1.3;
+    color: #B0BAC5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1482,5 +1539,9 @@ body {
 
     .user-flow-heading .user-flow-text {
         order: -1;
+    }
+
+    .prototype-btn-wrapper p{
+        text-align: center;
     }
 }
