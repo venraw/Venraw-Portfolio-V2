@@ -1092,10 +1092,168 @@
 
 
 
+    <!-- ======================================================================= -->
+    <!-- PROTOTYPE VALIDATION                                                -->
+    <!-- ======================================================================= -->
+
+    <div class="prototype-validation-section">
+
+        <div class="prototype-validation-heading">
+            <h1>Prototype Validation</h1>
+
+            <p>
+                To check whether the prototype supports a core need, I ran a short usability test with three participants, all of them friends who trade and who were not involved in the design. Each participant used the Figma prototype on phone / desktop and was asked to complete one task, without any help from me.
+            </p>
+        </div>
+
+        <div class="study-result-section">
+            <h1>Study Result</h1>
+
+            <div class="task-wrapper">
+                <h3>Task</h3>
+
+                <ul class="task-list">
+                    <li> <strong>1 of 3</strong> participants completed the task without difficulty.</li>
+                    <li> <strong>2 of 3</strong> participants found it difficult.</li>
+                </ul>
+            </div>
+
+            <div class="insight-wrapper">
+                <h3>Insight</h3>
+                <p>
+                    Traders expect to see their monthly result at a glance. Checking trades individually works for a single day, but it does not scale to a full  month. Reviewing performance should be a scanning task, not a calculation.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="prototype-update-section">
+
+            <div class="prototype-update-concept">
+                <h1>prototype update concept</h1>
+
+                <h3>What I changed</h3>
+                <p>
+                    Participants struggled because the Journal showed every trade as an equal item in one long list, so finding the monthly result meant opening trades one by one and adding them up. I redesigned the Journal so the result is visible before any trade is opened:
+                </p>
+            </div>
+
+            <div class="prototype-update-wrapper">
+                <img class="prototype-update-svg" src="prototype update.svg" alt="">
+            </div>
+            
+            <ul class="what-i-changed-list">
+                <li>
+                    <strong>Trades are grouped by month.</strong> Each month is a section that can be collapsed, and the collapsed header shows the total profit or loss for that month, coloured green for profit and red for loss. Traders can read a month's result without scrolling through its trades.
+                </li>
+
+                <li>
+                    <strong>Each month is split into weeks.</strong> A week header shows its date range and its own P/L, for example "Week 1 · Aug 1–7 · P/L: +$137", so traders can see which part of the month drove the result.
+                </li>
+
+                <li>
+                    <strong>A summary line on each month.</strong> shows the number of journal entries and unexecuted trades.
+                </li>
+
+                <li><strong>Search.</strong> The search bar lets traders go straight to a pair, trade, or journal entry.</li>
+
+                <li>
+                    <strong>Filter.</strong> The filter lets them narrow the list by outcome, showing only wins, losses, breakeven, or invalidated trades, so they can review one type of result without scrolling through the rest.
+                </li>
+
+                <li>
+                    <strong>Full trade details stay on each card.</strong> (entry, exit, risk, P/L, journal status, criteria fulfilment, and rules compliance), so traders who review a single trade lose nothing.
+                </li>
+            </ul>
+
+            <div class="retest-result">
+                <h3>Retest Result</h3>
+
+                <p>
+                    I retested the revised Journal with 3 participants using the same task: find the total profit made from journaled trades in the current month. All the 3 participants completed it without difficulty. Each month now shows its total profit and number of trades, so participants no longer had to open trades one by one or add up results themselves. They also found the layout flexible and easy to scan: weekly sections broke the month into smaller parts, and the filter let them view only wins, losses, breakeven, or invalidated trades.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- ======================================================================= -->
-    <!-- PROTOTYPE SECTION                                                -->
+    <!-- ACCESSIBILITY CHECK                                                -->
     <!-- ======================================================================= -->
+
+    <div class="Accessibility-check-section">
+            <div class="Accessibility-check-heading">
+                <h1>Acessbility Check</h1>
+
+                <p>
+                    The app has been evaluated for contrast to macth the AA standards of WCAG. In some cases I found that the contrast can be Improved.
+                </p>
+            </div>
+
+            <div class="Accessibility-check-wrapper">
+                <img class="Accessibility-check-svg" src="acessibility check icon.svg" alt="">
+            </div>
+
+            <p>
+                One specific example is the active filter chip on the calendar. I used a bright green fill with white text so the selected filter would stand out from the other chips, but the combination had a contrast ratio of about 2.2:1, below the 4.5:1 that WCAG AA requires for normal text. In the final version I kept the green and changed the label to a near-black (#0B0F16), which raises the ratio to about 8.4:1 and passes both AA and AAA, while the chip still stands out clearly from the others.
+            </p>
+    </div>
+
+    
+    <div class="final-part">
+        
+        <div class="accessibility-check-lesson">
+
+            <div class="project-summary-wrapper">
+                <img class="project-summary-svg" src="project summary illustravtion.webp" alt="">
+            </div>
+
+            <div class="lesson-one">
+                <h3>Acessbility Check</h3>
+
+                <p>
+                    EdgeTracker began with a problem I experienced as a trader: results, behaviour, and market news are spread across different tools. To test whether other traders felt the same, I surveyed 15 active traders using Google Forms and used the findings to shape the product. From there I created wireframes, designed high-fidelity screens, and built an interactive prototype. I ran usability tests with three participants, including a retest after redesigning the Journal, and reviewed the design     for accessibility, which led me to fix a colour contrast issue on the filter chip.
+                </p>
+            </div>
+
+        </div>
+  
+
+        <div class="lesson-two">
+                <h3>What I Learned</h3>
+
+                <p>
+                    I started this project believing my idea was the first of its kind. During competitor research I found that Edgewonk offers similar functionality. Instead of discouraging me, it clarified what makes EdgeTracker different: [name 1-2 features, such as the combined P&amp;L and economic calendar or the news trading insight], which I did not find in the journals I reviewed. The project also taught me a great deal about the trading industry and how traders think about risk, discipline, and review, and that knowledge directly shaped my design decisions.
+                </p>
+        </div>
+
+    </div>
+
+
+    <div class="closing-picture-wrapper">
+        <img class="closing-picture-svg" src="closing picture.svg" alt="">
+    </div>
+
+
+
+
+
+
 
 
 
