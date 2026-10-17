@@ -64,6 +64,13 @@ body {
     box-sizing: border-box;
 }
 
+.section-btn:hover,
+.section-btn:focus-visible {
+    background: #1d57d4;
+    transform: translateY(-2px);
+    
+}
+
 
 
 
@@ -1677,7 +1684,7 @@ body {
 
 
 
-/*
+
 .closing-picture-svg {
     display: block;
     height: auto;
@@ -1689,13 +1696,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
-    */
+
 
 .closing-section {
-    padding-block: 40px;
+    padding-block: 24px;
     background: #11161C;
     padding-inline: clamp(1rem, 3vw, 2rem);
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;*/
 }
 
 
@@ -1718,16 +1730,13 @@ body {
     font-size: clamp(0.75rem, 0.5vw + 0.65rem, 1rem);
 }
 
-.view-all-project {
+.view-all-project, 
+.back-link, 
+.more-project {
     padding: 8px 24px;
     border: 1px solid #1d57d4;
     color: #F8FAFC;
     border-radius: 999px;
-
-    display: inline-flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 
     font-size: clamp(0.75rem, 0.5vw + 0.65rem, 1rem);
 }
@@ -1737,10 +1746,19 @@ body {
     background: #1d57d4ac;
 }
 
-.view-all-project:hover {
+.view-all-project:hover,
+.back-link:hover,
+.more-project:hover {
     background: rgb(59, 130, 246, 0.10);
     border-color: #3b82f6;
     color: #60a5fa;
+}
+
+.back-link {
+    display: flex;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .closing-remark-btn {
@@ -1758,9 +1776,24 @@ body {
 
 .closing-remark {
     display: flex;
-    
     flex-direction: column;
     gap: 24px;
+}
+
+.more-project {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.last-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 
@@ -1780,7 +1813,11 @@ body {
 
 
 
-
+@media (min-width: 700px) {
+    .last-btn {
+        justify-content: space-between;
+    }
+}
 
 /*--------------------------------------------------------------
  2. MOBILE PHONES (Max-width: 480px) - MEDIA QUERY
@@ -1833,5 +1870,12 @@ body {
 
     .prototype-btn-wrapper p{
         text-align: center;
+    }
+
+    .closing-section-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
