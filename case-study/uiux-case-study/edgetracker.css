@@ -1733,11 +1733,14 @@ body {
 .view-all-project, 
 .back-link, 
 .more-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 8px 24px;
     border: 1px solid #1d57d4;
     color: #F8FAFC;
     border-radius: 999px;
-
+    
     font-size: clamp(0.75rem, 0.5vw + 0.65rem, 1rem);
 }
 
@@ -1752,13 +1755,6 @@ body {
     background: rgb(59, 130, 246, 0.10);
     border-color: #3b82f6;
     color: #60a5fa;
-}
-
-.back-link {
-    display: flex;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
 }
 
 .closing-remark-btn {
@@ -1780,20 +1776,22 @@ body {
     gap: 24px;
 }
 
-.more-project {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
 .last-btn {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    gap: 16px;
+    gap: 40px;
     flex-wrap: wrap;
     margin-bottom: 40px;
+}
+
+.more-project, 
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 
