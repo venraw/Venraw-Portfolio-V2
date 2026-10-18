@@ -133,9 +133,11 @@ body {
 }
 .reason-text p {
     color: #B0BAC5;
-
     font-size: clamp(0.75rem, 1vw + 0.55rem, 1.25rem);
     line-height: 1.6;
+}
+.reason-text p + p {
+    margin-top: 8px;
 }
 .reason-text h1 {
     color: #F8FAFC;
